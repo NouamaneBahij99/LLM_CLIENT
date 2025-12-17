@@ -17,7 +17,7 @@ def generate_local(prompt: str) -> str:
     """Appel du modèle LLM local (Mistral 7B via llama-cli)."""
     try:
         cmd = [
-           "/Users/nouamanebahij/AndroidStudioProjects/LLM_CLIENT/llama.cpp/build/bin/llama-cli",
+           "/Users/nouamanebahij/AndroidStudioProjects/LLM_CLIENTFINAL/llama.cpp/build/bin/llama-cli",
             "-m", "/Users/nouamanebahij/AndroidStudioProjects/guran_app/models/mistral-7b-v0.1.Q4_K_M.gguf",
             "-p", prompt,
             "--ctx-size", "512",
