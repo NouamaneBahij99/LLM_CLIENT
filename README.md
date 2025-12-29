@@ -119,3 +119,16 @@ Recette générée par LLM distant pour 'Recette avec l'ingrédient tomate' (sim
 python3 -m client_llm.main_flow
 Mode (offline/online/server) : server
 [Cache Redis] La première sourate du Coran est Al-Fatiha.
+
+🔸 Test Server 
+curl -X 'POST' \
+  'http://0.0.0.0:8000/ask' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+
+  "app_id": 1234567892,
+
+  "question": "can you tell me about the history off prophet mohamed ?"
+
+}'
